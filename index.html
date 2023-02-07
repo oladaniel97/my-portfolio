@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfoilo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+   <header>
+    <img src="assets/images/logo.png" alt="">
+    <nav>
+        <input type="checkbox" name="" id="toggle">
+            <label for="toggle" class="hamburger">&#9776</label>
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#portfolio">Portfoilo</a></li>
+            <li><a href="#contact" class="contact">Contact me</a></li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+    <section>
+        <article id="hero">
+            <h1>Hello, I'm Amodu Daniel</h1>
+            <h3>A Full stack Software developer</h3>
+            <button><a  href="#projects">View my works <i class="fa fa-arrow-right "></i></a></button>
+            <ul>
+                <li><a href="https://github.com/oladaniel97">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/daniel-amodu-119315129/">LinkedIN</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <article id="about">
+            <h3>02. ABOUT ME</h3>
+            <div class="aboutin">
+                <div>
+                    <p>I’m a full stack developer from lagos specialized in frontend and backend developement for complex scalable web apps. I’m passionate about digital products that help perform seamless everday activities.
+                    </p>
+                    <p>I’m a dedicated and efficient full-stack web developer with years of experience in application layers, API design and databases. I am proficient in a wide range of skills HTML, CSS(Vanilla, bootstrap, and tailwind), Javascript, react, python-django.
+                    </p>
+                    <button class="works"><a href="">View more <i class="fa fa-arrow-right"> </i></a></button>
+                </div>
+                <div>
+                    <img src="assets/images/rectan.png" alt="">
+                    <div id="cv">
+                        <button class="cv"><a href="assets/images/cv.pdf" download="/assets/images/cv.pdf">Download cv <i class="fa fa-arrow-right"></i></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="assets/images/skills.png" alt="">
+            </div>
+        </article>
+    </section>
+    <section>
+        <article id="service">
+            <h3>02. My Services</h3>
+            <div class="service">
+                <div><img src="assets/images/back.png" alt="">
+                    <p><strong>FRONT-END DEVELOPER</strong></p>
+                    <p>Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices for SEO optimisation. Use modern tech such as Tailwand CSS, and GSAP</p>
+                </div>
+                <div class="middle"><img src="assets/images/cad.png" alt="">
+                    <p><strong>3D DRAFTER</strong></p>
+                    <p>A sound knowledge in engineering design and drawing and i create preliminary design sketches for conceptual analysis for more accurate design presentation principles using AutoCAD nd Revit</p>
+                </div>
+                <div><img src="assets/images/front.png" alt="">
+                    <p><strong>BACK-END DEVELOPER</strong></p>
+                    <p>Build scalable and maintainable server applications, as well as the integration of the front-end part using cutting-edge technologies such as Django</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article id="project">
+            <h3>02. PROJECTS</h3>
+            <div class="tab">
+                <div id="tab1" onClick="JavaScript:selectTab(1);">All</div>
+                <div id="tab2" onClick="JavaScript:selectTab(2);">Web design</div>
+                <div id="tab3" onClick="JavaScript:selectTab(3);">3D design</div>
+            </div>
+            <div id="tab1Content">
+
+            </div>
+            <div id="tab2Content">
+
+            </div>
+            <div id="tab3Content">
+
+            </div>
+        </article>
+    </section>
+    <section>
+        <div class="testimonial">
+            <h3>Testimonials</h3>
+            <div class="container ">
+                <div id="carouselControls" class="carousel slide mt-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active text-center">
+                        <i class="fa fa-quote-left"></i>
+                        <p class="fs-5">Daniel have been dependable, he is good at what he does</p>
+                        <i class="fa fa-quote-right"></i>
+                        <p>Agunbiade Emmanuel <em>CEO, Emmy's Design</em></p>
+                      </div>
+                      <div class="carousel-item text-center">
+                        <i class="fa fa-quote-left"></i>
+                        <p class="fs-5">Great team leader</p>
+                        <i class="fa fa-quote-right"></i>
+                        <p>Adebimpe Adenike <em>full-stack developer</em></p>
+                      </div>
+                      <div class="carousel-item text-center">
+                        <i class="fa fa-quote-left"></i>
+                        <p class="fs-5">Amazing work daniel,Good work,i am rooting for you</p>
+                        <i class="fa fa-quote-right"></i>
+                        <p>Folorunsho Abigael <em>Product Designer</em></p>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </section>
+   </main>
+   <footer >
+    <div class="foot">
+        <img src="assets/images/logo.png" alt="">
+    <div class="footer">
+        <div class="i">
+            <p>
+                6 Palm Bay Estate,Ibeju Lekki Lagos Nigeria
+            </p>
+            <p>
+                +234-902-615-1693
+            </p>
+            <p>
+                danielolayinka97@gmail.com
+            </p>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#portfolio">Portfoilo</a></li>
+                <li><a href="#contact" >Contact me</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://github.com/oladaniel97">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/daniel-amodu-119315129/">LinkedIN</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+<script type="JavaScript" src="/assets/js/index.js">
+ </script>
+</html>
