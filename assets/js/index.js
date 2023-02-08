@@ -7,3 +7,4 @@ function selectTab(tabIndex) {
     document.getElementById("tab" + tabIndex + "Content").style.display =
     "block";
  }
+
