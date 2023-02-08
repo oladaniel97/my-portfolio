@@ -54,8 +54,60 @@
                     </p>
                     <p>I’m a dedicated and efficient full-stack web developer with years of experience in application layers, API design and databases. I am proficient in a wide range of skills HTML, CSS(Vanilla, bootstrap, and tailwind), Javascript, react, python-django.
                     </p>
-                    <button class="works"><a href="">View more <i class="fa fa-arrow-right"> </i></a></button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="works" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        View more <i class="fa fa-arrow-right"> </i>
+                    </button>
+  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content body">
+                            <div class="modal-header ">
+                            <h5 class="modal-title fs-1 " id="exampleModalLabel">About me</h5>
+                            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body body"  >
+                                <p>I’m a full stack developer from lagos specialized in frontend and backend developement for complex scalable web apps. I’m passionate about digital products that help perform seamless everday activities.
+                                </p>
+                                <p>I’m a dedicated and efficient full-stack web developer with years of experience in application layers, API design and databases. I am proficient in a wide range of skills HTML, CSS(Vanilla, bootstrap, and tailwind), Javascript, react, python-django.
+                                </p>
+                                <p>I am also a 3D Architectural drafter with 2 years of experience. i am proficient in AutoCAD ,Autodesk Revit and Chief architect premium.</p>
+                                <h2>skills</h2>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-arrow-right"> </i> Front-end technologies
+                                        <ul>
+                                            <li><i class="fa fa-arrow-right"> </i> HTML</li>
+                                            <li><i class="fa fa-arrow-right"> </i> CSS (Vannila,Bootstrap,tailwind)</li>
+                                            <li><i class="fa fa-arrow-right"> </i> JavaScript</li>
+                                            <li><i class="fa fa-arrow-right"> </i> React</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-arrow-right"> </i> Back-end languages
+                                        <ul>
+                                            <li><i class="fa fa-arrow-right"> </i> python-django</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-arrow-right"> </i> 3D design
+                                        <ul>
+                                            <li><i class="fa fa-arrow-right"> </i> Autodesk Revit</li>
+                                            <li><i class="fa fa-arrow-right"> </i> AutoCAD</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer body">
+                            <button type="button" class="works" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="works">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div>
                     <img src="assets/images/rectan.png" alt="">
                     <div id="cv" class="mt-4">
@@ -88,8 +140,8 @@
         </article>
     </section>
     <section>
-        <article id="project">
-            <h3>02. PROJECTS</h3>
+        <article id="project ">
+            <h3 id="projects" class="text-center">02. PROJECTS</h3>
             <div class="tab">
                 <div id="tab1" onClick="JavaScript:selectTab(1);">Front-end</div>
                 <div id="tab2" onClick="JavaScript:selectTab(2);">Back-end </div>
@@ -173,7 +225,7 @@
         </div>
     </section>
    </main>
-   <footer >
+   <footer id="contact">
     <div class="foot">
         <img src="assets/images/logo.png" alt="">
     <div class="footer">
