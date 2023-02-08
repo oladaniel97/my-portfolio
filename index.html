@@ -91,18 +91,47 @@
         <article id="project">
             <h3>02. PROJECTS</h3>
             <div class="tab">
-                <div id="tab1" onClick="JavaScript:selectTab(1);">All</div>
-                <div id="tab2" onClick="JavaScript:selectTab(2);">Web design</div>
+                <div id="tab1" onClick="JavaScript:selectTab(1);">Front-end</div>
+                <div id="tab2" onClick="JavaScript:selectTab(2);">Back-end </div>
                 <div id="tab3" onClick="JavaScript:selectTab(3);">3D design</div>
             </div>
             <div id="tab1Content">
-
+                <p>all my combined projects</p>
             </div>
             <div id="tab2Content">
-
+                
             </div>
-            <div id="tab3Content">
-
+            <div id="tab3Content" >
+                <div class="container">
+                    <div id="carouselControls1" class="carousel slide mt-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active text-center">
+                            <img src="assets/images/netherland.bmp" alt="" class="img-fluid h-75">
+                            <p>A building designed for a client in Netherland</p>
+                          </div>
+                          <div class="carousel-item text-center">
+                            <img src="assets/images/semi-detached2.jpg" alt="" class="img-fluid">
+                            <p>A semi-detached duplex in Lagos,Nigeria</p>
+                          </div>
+                          <div class="carousel-item text-center">
+                            <img src="assets/images/3 bedroom.png" alt="" class="img-fluid">
+                            <p>3 bedroom Apartment for a client</p>
+                          </div>
+                          <div class="carousel-item text-center">
+                            <img src="assets/images/semi-detached3.png" alt="" class="img-fluid">
+                            <p>Semi-detached duplex for a company</p>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
             </div>
         </article>
     </section>
@@ -187,11 +216,22 @@
     var typed = new Typed ("#typed",{
 strings: ["Full Stack Developer","Front-end Web Developer","3D Architectural Drafter","Back-end Web Developer"],
 typeSpeed: 100,
-backSpeed: 150,
+backSpeed: 50,
 loop: true
 })
+
+function selectTab(tabIndex) {
+    //Hide All Tabs
+    document.getElementById("tab1Content").style.display = "none";
+    document.getElementById("tab2Content").style.display = "none";
+    document.getElementById("tab3Content").style.display = "none";
+    //Show the Selected Tab
+    document.getElementById("tab" + tabIndex + "Content").style.display =
+    "block";
+ }
+</script>
+<script type="JavaScript" src="/assets/js/index.js">
 </script>
 </body>
-<script type="JavaScript" src="/assets/js/index.js">
- </script>
+
 </html>
