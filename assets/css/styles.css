@@ -184,9 +184,15 @@ input[type=checkbox]{
     text-align: center;
 }
 .service{
+    position: relative;
     display: flex;
     gap: 1rem;
     padding-top: 3rem;
+    margin-top: 2rem;
+}
+.middle{
+    position:relative;
+    top: -4rem;
 }
 
 .service div{
@@ -205,11 +211,11 @@ input[type=checkbox]{
     line-height: 1.5rem;
 }
 
-.service div:hover{
+/* .service div:hover{
     transform: translateY(-10px);
     transition: ease-in-out 1s;
     cursor: pointer;
-}
+} */
 
 
 /* project */
@@ -338,6 +344,10 @@ footer img{
 
     .service{
         flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .middle{
+        top: 0;
     }
     #tab3Content{
         flex-wrap: wrap;
