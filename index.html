@@ -111,7 +111,7 @@
                 <div>
                     <img src="assets/images/rectan.png" alt="">
                     <div id="cv" class="mt-4">
-                        <button class="cv"><a href="amodu.pdf" download>Download cv <i class="fa fa-arrow-right"></i></a></button>
+                        <button class="cv"><a href="joint.pdf" download>Download cv <i class="fa fa-arrow-right"></i></a></button>
                     </div>
                 </div>
             </div>
@@ -143,16 +143,42 @@
         <article id="project ">
             <h3 id="projects" class="text-center">02. PROJECTS</h3>
             <div class="tab">
-                <div id="tab1" onClick="JavaScript:selectTab(1);">Front-end</div>
-                <div id="tab2" onClick="JavaScript:selectTab(2);">Back-end </div>
+                <div id="tab1" onClick="JavaScript:selectTab(1);">full-stack</div>
+                <!-- <div id="tab2" onClick="JavaScript:selectTab(2);">Back-end </div> -->
                 <div id="tab3" onClick="JavaScript:selectTab(3);">3D design</div>
             </div>
             <div id="tab1Content">
-                <p>all my combined projects</p>
+                <div class="container d-flex flex-wrap gap-5">
+                    <div class="apps">
+                        <h3>Members Registration</h3>
+                        <p>A church registration website in which members can also search for other members</p>
+                        <button class="bt"><a href="https://github.com/oladaniel97/tacnmedia">code</a></button>
+                        <button class="bt"><a href="https://tacnmedia.up.railway.app/" target="_blank">live</a></button>
+                    </div>
+                    <div class="apps">
+                        <h3>Multi-purpose Web-App</h3>
+                        <p>A web application that combines a weather app,Todo app and a dictionary</p>
+                        <button class="bt"><a href="https://github.com/oladaniel97/multi-purpose">code</a></button>
+                        <button class="bt"><a href="https://multi.up.railway.app/" target="_blank">live</a></button>
+                    </div>
+                    <div class="apps">
+                        <h3>Price Comparison</h3>
+                        <p>A price comparison web-application using django for authentication</p>
+                        <button class="bt"><a href="https://github.com/oladaniel97/Team-Termite-1">code</a></button>
+                        <button class="bt"><a href="https://price-compare.up.railway.app/" target="_blank">live</a></button>
+                    </div>
+                    <div class="apps">
+                        <h3>Agro-consult Website</h3>
+                        <p>A website built with bootstrap css combined with html and javascript</p>
+                        <button class="bt"><a href="https://github.com/oladaniel97/agro-consult">code</a></button>
+                        <button class="bt"><a href="https://agric-consult.netlify.app/" target="_blank">live</a></button>
+                    </div>
+
+                </div>
             </div>
-            <div id="tab2Content">
+            <!-- <div id="tab2Content">
                 
-            </div>
+            </div> -->
             <div id="tab3Content" >
                 <div class="container">
                     <div id="carouselControls1" class="carousel slide mt-5" data-bs-ride="carousel">
@@ -230,9 +256,9 @@
         <img src="assets/images/logo.png" alt="">
     <div class="footer">
         <div class="i">
-            <p>
+            <!-- <p>
                 6 Palm Bay Estate,Ibeju Lekki Lagos Nigeria
-            </p>
+            </p> -->
             <p>
                 +234-902-615-1693
             </p>
@@ -240,22 +266,22 @@
                 danielolayinka97@gmail.com
             </p>
         </div>
-        <div>
+        <!-- <div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#portfolio">Portfoilo</a></li>
-                <li><a href="#contact" >Contact me</a></li>
+                
             </ul>
-        </div>
+        </div> -->
         <div>
-            <ul>
+            <ul class="sociall">
                 <li><a href="https://github.com/oladaniel97">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/daniel-amodu-119315129/">LinkedIN</a></li>
                 <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
+                <!-- <li><a href="#">Facebook</a></li> -->
             </ul>
         </div>
     </div>
@@ -275,7 +301,7 @@ loop: true
 function selectTab(tabIndex) {
     //Hide All Tabs
     document.getElementById("tab1Content").style.display = "none";
-    document.getElementById("tab2Content").style.display = "none";
+    // document.getElementById("tab2Content").style.display = "none";
     document.getElementById("tab3Content").style.display = "none";
     //Show the Selected Tab
     document.getElementById("tab" + tabIndex + "Content").style.display =

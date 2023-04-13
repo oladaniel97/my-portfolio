@@ -155,8 +155,24 @@ input[type=checkbox]{
     display: flex;
     justify-content: center;
 }
+.bt{
+    background: linear-gradient(98.9deg, #819FBB -12.94%, #4C6DCC 34.22%, #4835C0 99.84%);
+    border-radius: 8px;
+    border: none;
+    color: aliceblue;
+    padding: 0.5rem ;
+    font-size: 1rem ;
+}
 
-.cv:hover{
+.apps{
+    width: 20rem;
+    border: #1e1174 2px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.cv:hover,.bt:hover{
     background: linear-gradient(98.9deg, #293036 -12.94%, #192138 34.22%, #1e1174 99.84%);
 }
 
@@ -230,6 +246,11 @@ input[type=checkbox]{
     gap: 3rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
+}
+#tab1:hover,#tab3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #819FBB;
 }
 
 #tab1Content,
@@ -351,5 +372,13 @@ footer img{
     }
     #tab3Content{
         flex-wrap: wrap;
+    }
+
+    
+}
+
+@media (max-width:500px) {
+    .footer ul{
+        flex-direction: row;
     }
 }
